@@ -2,6 +2,12 @@
   background-image: url('img/background.png');
 }*/
 
+body {
+    background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+    background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+    background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+}
+
 h1 {
   font-family: 'Lusitana', serif;
   width: 600px;
@@ -17,9 +23,10 @@ body,
 body { overflow: hidden }
 #bubbles { padding: 100px 0 }
 .bubble {
-    width: 20px;
-    height: 20px;
-    background: #ffb200;
+    width: 40px;
+    height: 40px;
+    background: #FFF3D9;
+    /*background: #ffb200;*/
     border-radius: 200px;
     -moz-border-radius: 200px;
     -webkit-border-radius: 200px;
@@ -31,7 +38,7 @@ body { overflow: hidden }
         top: 1000px;
     }
     100% { 
-        top: -100px;
+        top: -50px;
     }
 }
 
@@ -48,9 +55,8 @@ body { overflow: hidden }
     0% { 
         top: 1000px;
     }
-
     100% { 
-        top: -100px;
+        top: -50px;
     }
 }
 
@@ -67,7 +73,7 @@ body { overflow: hidden }
         top: 1000px;
     }
     100% { 
-        top: -100px;
+        top: -50px;
     }
 }
 

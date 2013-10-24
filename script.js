@@ -10,7 +10,7 @@ $(document).ready(function(){
 		//f.start();	
 	//};
 	
-	var f = new Fountain(200, 100, bubbleContainer);
+	var f = new Fountain(400, 150, bubbleContainer);
 
 	f.IsFixedPoint(false);
 		
@@ -58,6 +58,8 @@ var Fountain = function(horizontalPosition, nBubbles, container){
 
 	var generateBubble = function(){
 
+		var viewPort = getViewport();
+
 		var element = $('<div />', {class:'bubble'});
 
 		container.append(element);
@@ -66,28 +68,29 @@ var Fountain = function(horizontalPosition, nBubbles, container){
 		if(fixedPoint){
 			element.css('left', horizontalPosition + 'px');
 		} else {
-			var offset = getRandomNumber(0, 1000);
+			var offset = getRandomNumber(0, viewPort[0]);
 			element.css('left', offset + 'px');
 		}
 		
 		// generate scale
-		var transform = getRandomNumber(40, 100)/100;
-
-		element.css('-webkit-transform', transform);
-		element.css('-moz-transform', transform);
-		element.css('transform', transform);
-
+		var transform = getRandomNumber(40, 60);
 		// generate opacity
 		var opacity = getRandomNumber(10, 50)/100;
-		element.css('opacity', opacity);
-
 		// animation
-		var moveClouds = getRandomNumber(5, 15);
+		var moveClouds = getRandomNumber(5, 10);
 		var sideways = getRandomNumber(1, 5);
-		var animationValue = 'moveclouds '+ moveClouds +'s linear infinite, sideWays ' + sideways + 's ease-in-out infinite alternate';
-		element.css('-webkit-animation', animationValue);
-		element.css('-moz-animation', animationValue);
-		element.css('-o-animation', animationValue);
+		var animationValue = 'moveclouds ' + moveClouds + 's ease infinite, sideWays ' + sideways + 's ease-in-out infinite alternate';
+
+		element.css({
+			'-webkit-transform': 'scale(' + transform/100 + ')',
+			'-moz-transform': 'scale(' + transform/100 + ')',
+			'transform': 'scale(' + transform/100 + ')',
+			'opacity': (transform - 30)/100,
+
+			'-webkit-animation': animationValue,
+			'-moz-animation': animationValue,
+			'-o-animation': animationValue
+		});
 	}
 }
 
