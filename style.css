@@ -1,6 +1,6 @@
-body {
+/*body {
   background-image: url('img/background.png');
-}
+}*/
 
 h1 {
   font-family: 'Lusitana', serif;
@@ -9,4 +9,73 @@ h1 {
   margin-right: auto;
   margin-top: 100px;
   font-size: 94px;
+}
+
+html,
+body,
+#bubbles { height: 100% }
+body { overflow: hidden }
+#bubbles { padding: 100px 0 }
+.bubble {
+    width: 20px;
+    height: 20px;
+    background: #ffb200;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: absolute;
+}
+
+@-webkit-keyframes moveclouds { 
+    0% { 
+        top: 1000px;
+    }
+    100% { 
+        top: -100px;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes moveclouds {     
+    0% { 
+        top: 1000px;
+    }
+
+    100% { 
+        top: -100px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+@-o-keyframes moveclouds {
+    0% { 
+        top: 1000px;
+    }
+    100% { 
+        top: -100px;
+    }
+}
+
+@-o-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
 }
