@@ -8,6 +8,11 @@ body {
     background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
 }
 
+#head {
+    background-color: #FFFFFF;
+    height: 200px
+}
+
 h1 {
   font-family: 'Lusitana', serif;
   width: 600px;
@@ -26,11 +31,12 @@ body { overflow: hidden }
     width: 40px;
     height: 40px;
     background: #FFF3D9;
-    /*background: #ffb200;*/
     border-radius: 200px;
     -moz-border-radius: 200px;
     -webkit-border-radius: 200px;
     position: absolute;
+
+    background: -webkit-radial-gradient(30px 30px, farthest-side, #E3DBB1 80%, #96852D 90%, #695D1F);
 }
 
 @-webkit-keyframes moveclouds { 
