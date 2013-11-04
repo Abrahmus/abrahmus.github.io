@@ -1,32 +1,49 @@
-/*body {
-  background-image: url('img/background.png');
-}*/
-
+/*
 body {
     background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
     background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
     background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
 }
-
-#head {
-    background-color: #FFFFFF;
-    height: 200px
-}
+*/
 
 h1 {
   font-family: 'Lusitana', serif;
   width: 600px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
   font-size: 94px;
 }
 
 html,
 body,
-#bubbles { height: 100% }
-body { overflow: hidden }
-#bubbles { padding: 100px 0 }
+#body { overflow: hidden }
+
+#head { 
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 30%;
+    z-index: 99;
+    opacity: 0.95;
+    background: -webkit-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+    background: -moz-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+    background: -o-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+}
+
+#body { 
+    top:25%;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+    background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+    background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+}
+
 .bubble {
     width: 40px;
     height: 40px;
@@ -74,6 +91,7 @@ body { overflow: hidden }
         margin-left:50px;
     }
 }
+
 @-o-keyframes moveclouds {
     0% { 
         top: 1000px;

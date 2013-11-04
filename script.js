@@ -1,14 +1,7 @@
 
 $(document).ready(function(){
 
-	var bubbleContainer = $('.bubbles');
-
-	//for (var i = 5; i > 0; i--) {
-		
-		//var f = new Fountain(200 * i, 10, bubbleContainer);
-
-		//f.start();	
-	//};
+	var bubbleContainer = $('#body');
 	
 	var f = new Fountain(400, 150, bubbleContainer);
 
