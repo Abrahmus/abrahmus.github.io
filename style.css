@@ -1,15 +1,7 @@
-/*
-body {
-    background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-    background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-    background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-}
-*/
-
 h1 {
   font-family: 'Lusitana', serif;
   width: 600px;
-  margin-top: 0;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   font-size: 94px;
@@ -26,14 +18,14 @@ body,
     width: 100%;
     height: 30%;
     z-index: 99;
-    opacity: 0.95;
+    opacity: 0.70;
     background: -webkit-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
     background: -moz-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
     background: -o-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
 }
 
 #body { 
-    top:25%;
+    top:30%;
     left:0;
     position: absolute;
     width: 100%;
