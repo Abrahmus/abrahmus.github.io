@@ -1,10 +1,13 @@
+.logo {
+  display: block;
+  width: 58%;
+  margin: auto;
+}
+
 h1 {
-  font-family: 'Lusitana', serif;
   width: 600px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 94px;
 }
 
 html,
@@ -12,92 +15,66 @@ body,
 #body { overflow: hidden }
 
 #head { 
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 30%;
-    z-index: 99;
-    opacity: 0.70;
-    background: -webkit-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
-    background: -moz-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
-    background: -o-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 30%;
+  z-index: 99;
+  opacity: 0.70;
+  background: -webkit-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+  background: -moz-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+  background: -o-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
 }
 
 #body { 
-    top:30%;
-    left:0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-    background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-    background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-    background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+  top: 0;
+  left:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+  background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+  background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
 }
 
 .bubble {
-    width: 40px;
-    height: 40px;
-    background: #FFF3D9;
-    border-radius: 200px;
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-    position: absolute;
-
-    background: -webkit-radial-gradient(30px 30px, farthest-side, #E3DBB1 80%, #96852D 90%, #695D1F);
+  position: absolute;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  background: #FFF3D9;
+  background: -webkit-radial-gradient(30px 30px, farthest-side, #E3DBB1 80%, #96852D 90%, #695D1F);
 }
 
 @-webkit-keyframes moveclouds { 
-    0% { 
-        top: 1000px;
-    }
-    100% { 
-        top: -50px;
-    }
+  0% { top: 1000px; }
+  100% { top: -50px; }
 }
 
 @-webkit-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
 }
 
 @-moz-keyframes moveclouds {     
-    0% { 
-        top: 1000px;
-    }
-    100% { 
-        top: -50px;
-    }
+  0% { top: 1000px; }
+  100% { top: -50px; }
 }
 
 @-moz-keyframes sideWays {
-    0% {
-        margin-left:0px;
-    }
-    100% {
-        margin-left:50px;
-    }
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
 }
 
 @-o-keyframes moveclouds {
-    0% { 
-        top: 1000px;
-    }
-    100% { 
-        top: -50px;
-    }
+  0% { top: 1000px; }
+  100% { top: -50px; }
 }
 
 @-o-keyframes sideWays {
-    0% {
-        margin-left:0px;
-    }
-    100% {
-        margin-left:50px;
-    }
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
 }
+
