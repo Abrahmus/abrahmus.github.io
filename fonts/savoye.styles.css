@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'SavoyePlain';
+	src: url('SavoyePlain.eot?') format('eot'), 
+	     url('SavoyePlain.woff') format('woff'), 
+	     url('SavoyePlain.ttf')  format('truetype'),
+	     url('SavoyePlain.svg#SavoyePlain') format('svg');
+}

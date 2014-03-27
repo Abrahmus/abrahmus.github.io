@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'TrajanPro-Regular';
+	src: url('TrajanPro-Regular.eot?') format('eot'), 
+	     url('TrajanPro-Regular.woff') format('woff'), 
+	     url('TrajanPro-Regular.ttf')  format('truetype'),
+	     url('TrajanPro-Regular.svg#TrajanPro-Regular') format('svg');
+}
