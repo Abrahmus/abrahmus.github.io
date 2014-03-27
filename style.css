@@ -38,13 +38,26 @@ body {
   min-width: 500px;
   height: 100%;
   position: absolute;
-  left: 50%;
+  right: 10%;
   opacity: 0.78;
   box-sizing: border-box;
   padding: 80px 100px;
 }
 
+.logo {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.text {
+    margin: auto;
+    width: 90%;
+}
+
 .quote {
+  text-align: justify;
   font-family: 'Skia';
   font-size: 20px;
   margin-bottom: -10px;
@@ -65,13 +78,6 @@ body {
   font-size: 20px;
   left: 0;
   right: 0;
-}
-
-.logo {
-  display: block;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 80px;
 }
 
 .bg {
