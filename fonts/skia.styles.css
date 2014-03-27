@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'Skia';
+	src: url('Skia.eot?') format('eot'), 
+	     url('Skia.woff') format('woff'), 
+	     url('Skia.ttf')  format('truetype'),
+	     url('Skia.svg#Skia') format('svg');
+}

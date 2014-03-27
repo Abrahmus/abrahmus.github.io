@@ -1,103 +1,113 @@
-h1 {
-  font-family: 'Lusitana', serif;
-  width: 600px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 94px;
+
+@font-face {
+	font-family: 'TrajanPro';
+	src: url('fonts/TrajanPro-Regular.eot?') format('eot'), 
+	     url('fonts/TrajanPro-Regular.woff') format('woff'), 
+	     url('fonts/TrajanPro-Regular.ttf')  format('truetype'),
+	     url('fonts/TrajanPro-Regular.svg#TrajanPro-Regular') format('svg');
 }
 
-html,
-body,
-#body { overflow: hidden }
-
-#head { 
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 30%;
-    z-index: 99;
-    opacity: 0.70;
-    background: -webkit-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
-    background: -moz-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
-    background: -o-linear-gradient(left, #A1A09A, #FFFCD3 50%, #A1A09A);
+@font-face {
+	font-family: 'SavoyePlain';
+	src: url('fonts/SavoyePlain.eot?') format('eot'), 
+	     url('fonts/SavoyePlain.woff') format('woff'), 
+	     url('fonts/SavoyePlain.ttf')  format('truetype'),
+	     url('fonts/SavoyePlain.svg#SavoyePlain') format('svg');
 }
 
-#body { 
-    top:30%;
-    left:0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-    background: -webkit-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-    background: -moz-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
-    background: -o-linear-gradient(left, #a18f33, #E3D27D 50%, #a18f33);
+@font-face {
+	font-family: 'Skia';
+	src: url('fonts/Skia.eot?') format('eot'), 
+	     url('fonts/Skia.woff') format('woff'), 
+	     url('fonts/Skia.ttf')  format('truetype'),
+	     url('fonts/Skia.svg#Skia') format('svg');
 }
 
-.bubble {
-    width: 40px;
-    height: 40px;
-    background: #FFF3D9;
-    border-radius: 200px;
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-    position: absolute;
-
-    background: -webkit-radial-gradient(30px 30px, farthest-side, #E3DBB1 80%, #96852D 90%, #695D1F);
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: white;
+  font-family: 'Skia', sans-serif;
+  background-color: black;
 }
 
-@-webkit-keyframes moveclouds { 
-    0% { 
-        top: 1000px;
-    }
-    100% { 
-        top: -50px;
-    }
+.panel {
+  margin: auto;
+  width: 40%;
+  min-width: 500px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  opacity: 0.78;
+  box-sizing: border-box;
+  padding: 80px 100px;
 }
 
-@-webkit-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
+.quote {
+  font-family: 'Skia';
+  font-size: 20px;
+  margin-bottom: -10px;
 }
 
-@-moz-keyframes moveclouds {     
-    0% { 
-        top: 1000px;
-    }
-    100% { 
-        top: -50px;
-    }
+.author {
+  font-family: 'SavoyePlain';
+  font-size: 55px;
+  text-align: right;
+  margin-right: 1em;
 }
 
-@-moz-keyframes sideWays {
-    0% {
-        margin-left:0px;
-    }
-    100% {
-        margin-left:50px;
-    }
+.footer {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  font-family: 'TrajanPro';
+  font-size: 20px;
+  left: 0;
+  right: 0;
 }
 
-@-o-keyframes moveclouds {
-    0% { 
-        top: 1000px;
-    }
-    100% { 
-        top: -50px;
-    }
+.logo {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 80px;
 }
 
-@-o-keyframes sideWays {
-    0% {
-        margin-left:0px;
-    }
-    100% {
-        margin-left:50px;
-    }
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.auctl {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.auctl .glyphicon {
+  cursor: pointer;
+}
+
+.panel {
+background: #b28879; /* Old browsers */
+background: -moz-linear-gradient(left, #b28879 0%, #1d0b09 4%, #25120d 18%, #26090d 52%, #41170b 87%, #7f4935 96%, #bf6e4e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b28879), color-stop(4%,#1d0b09), color-stop(18%,#25120d), color-stop(52%,#26090d), color-stop(87%,#41170b), color-stop(96%,#7f4935), color-stop(100%,#bf6e4e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #b28879 0%,#1d0b09 4%,#25120d 18%,#26090d 52%,#41170b 87%,#7f4935 96%,#bf6e4e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #b28879 0%,#1d0b09 4%,#25120d 18%,#26090d 52%,#41170b 87%,#7f4935 96%,#bf6e4e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #b28879 0%,#1d0b09 4%,#25120d 18%,#26090d 52%,#41170b 87%,#7f4935 96%,#bf6e4e 100%); /* IE10+ */
+background: linear-gradient(to right, #b28879 0%,#1d0b09 4%,#25120d 18%,#26090d 52%,#41170b 87%,#7f4935 96%,#bf6e4e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b28879', endColorstr='#bf6e4e',GradientType=1 ); /* IE6-9 */
 }

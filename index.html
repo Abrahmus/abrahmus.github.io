@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Abrahmus</title>
-    <link rel="stylesheet" href="style.css"></link>
-    <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/ico" href="favico.ico">
+  <title>Abrahmus</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <div class="panel">
+    <img class="logo" src="img/logo.white.png" />
+    <p class="quote">
+      Não se descuide de ser alegre - só a alegria dá alma e luz à Ironia, à Santa Ironia - que sem ela não é mais que uma amargura vazia.
+    </p>
+    <p class="author">
+      Eça
+    </p>
+    <p class="footer">Abrahmus</p>
+  </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="head"></div>
-    <!--div id="body"></div-->
-    <div id="body">
-      
-      <h1>Abrahmus is brewing...</h1>
-    </div
-  </body>
+  <div class="auctl">
+    <span class="mute glyphicon glyphicon-volume-off"></span>
+    <span class="unmute glyphicon glyphicon-volume-up"></span>
+  </div>
+
+  <div class="bg">
+      <video loop autoplay>
+          <source src="bgv.webm" type="video/webm">
+          <source src="bgv.mp4" type="video/mp4">
+      </video>
+      <audio id="bgaudio" loop autoplay>
+        <source src="bga.webm" type="audio/webm">
+        <source src="bga.ogg" type="audio/ogg">
+        <source src="bga.mp3" type="audio/mpeg">
+      </audio>
+  </div>
+
+  <script>
+    var audio = document.getElementById("bgaudio");
+    var mutebtn = document.getElementsByClassName('mute')[0];
+    var unmutebtn = document.getElementsByClassName('unmute')[0];
+    var volume = 0.35;
+    audio.volume = volume;
+    unmutebtn.style.display = 'none';
+    mutebtn.addEventListener('click', function() {
+      audio.volume = 0;
+      mutebtn.style.display = 'none';
+      unmutebtn.style.display = 'initial';
+    });
+    unmutebtn.addEventListener('click', function() {
+      audio.volume = volume;
+      unmutebtn.style.display = 'none';
+      mutebtn.style.display = 'initial';
+    });
+  </script>
+
+</body>
 </html>
+
